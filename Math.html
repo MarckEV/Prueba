@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de asd</title>
+
+        <script>
+            const number = ["https://www.youtube.com/shorts/KsHP3hwmTxU", "https://www.youtube.com/shorts/v0OTFLS4yQQ", "https://developer.mozilla.org/es/docs/Web/API/Document/write"]
+            n = Math.floor(Math.random() * number.length)
+            console.log(n)
+
+            function nuevoContenido () {
+                document.open();
+                document.write(
+                    "buscadores".link(number[n])
+                );
+                document.close();
+            }
+        </script>
+
+    </head>
+  <body onload="nuevoContenido()">
+    <p>Algo de contenido original del documento</p>
+  </body>
+</html>
