@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+            height: 300px;
+        }
+
+        input{
+            position: absolute;
+            opacity: 0%;
+            width: 0%;
+        }
+    </style>
+    <script>
+        setInterval(CambioImagen, 100);
+        setTimeout(musiquita, 200);
+
+        document.addEventListener('mousemove', musiquita);
+
+
+        function CambioImagen(){
+            var img = document.getElementById('imagen');
+
+            if (img.className == "1"){
+                img.className = "2"
+                img.src = "Imagen.png"
+            }
+            else{
+                img.className = "1"
+                img.src = "fondo.jpg"
+            }
+        }
+
+        function musiquita(){
+            var audio = document.getElementById('music').play();
+        }
+    </script>
+</head>
+<body>
+    <img src="fondo.jpg" id="imagen" class="1">
+    <audio src="sonido.mp3" id="music"></audio>
+</body>
+</html>

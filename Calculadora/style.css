@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Pixelify+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(fondo.jpeg);
+    background-size: auto;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    top: 15vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#PNT{
+    width: 100%;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: auto;
+}
+
+#PNT:focus{
+    outline: none;
+}
+
+.entrada{
+    display: flex;
+    justify-content: space-between;
+}
+
+#N1,#N2{
+    width: 49%;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.OP{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(116, 116, 116, 0.7),
+                0 -10px 10px rgba(0, 0, 0, 0.7) inset;
+    cursor: pointer;
+
+}
+
+.OP:hover{
+    transform: scale(1.05);
+}
+
+.SumRes{
+    width: 150px;
+}
